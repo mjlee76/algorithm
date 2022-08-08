@@ -8,16 +8,23 @@ public class 최댓값 {
 
         Scanner sc = new Scanner(System.in);
 
-        int num[] = new int[8];
+        int num[] = new int[9];
 
-        for(int i=0; i<8; i++)
+        for(int i=0; i<9; i++)
             num[i] = sc.nextInt();
 
-        int max = num[0];
-        int j=0;
-        while(j<9){
-            if(num[j] < num[j+1]){}
+        int MAX = num[0];
+        int count = 1;
+        
+        for(int j=1; j<9; j++){
+            if(num[j] > MAX){
+                MAX = num[j];
+                count = j+1;
+            }
+            else continue;
         }
+
+        System.out.println(MAX+"\n"+count);
 
     }
     
