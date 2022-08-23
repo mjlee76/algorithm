@@ -16,7 +16,6 @@ public class 한수 {
             else ArithmeticSequence(i, num);
         }
         for(int j=1; j<n+1; j++){
-            // System.out.println(j+": "+num[j]);
             if(num[j]==true) 
                 count++;
         }
