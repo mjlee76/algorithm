@@ -13,8 +13,10 @@ public class 벌집 {
         int circle_count = 0;
 
         while(true){
-            // if(N==prev_count_sum)
-            //     System.out.print((prev_count_sum/6)+1);
+            if(N==prev_count_sum){
+                System.out.print(1);
+                break;
+            }    
             if(prev_count_sum < N && N <= prev_count_sum + circle_count){
                 System.out.print((circle_count/6)+1);
                 break;
